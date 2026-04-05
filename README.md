@@ -15,4 +15,13 @@ A modern, responsive, and user-friendly delivery price calculator built with Rea
 - TypeScript – Static type checking
 - Tailwind CSS – Utility-first CSS framework
 - Vite – Development build tool
+
+🔹 How It Works
+- User enters distance in kilometers.
+- Click Calculate Price → the delivery price is displayed.
+- Click Clear → resets distance and price inputs.
+- Price calculation formula:
+  
+- if distance < 10 km → price = distance * 300
+- else → price = 3000 + (distance - 10 km) * 160
   
