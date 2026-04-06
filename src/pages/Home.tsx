@@ -78,8 +78,8 @@ const Home = () => {
 
     const distanceInMeters = distanceKm * 1000;
 
-    if (distanceInMeters < 10000) {
-      setPrice(distanceInMeters * 0.3);
+    if (distanceInMeters <= 10000) {
+      setPrice(3000);
       return;
     }
 
@@ -99,6 +99,9 @@ const Home = () => {
       <div className="w-full max-w-2xl">
         <div className="rounded-3xl bg-white shadow-2xl border border-slate-200 overflow-hidden">
           <div className="bg-gradient-to-r from-blue-600 to-indigo-600 px-8 py-10 text-white">
+            <p className="text-4xl font-bold uppercase tracking-widest text-yellow-300">
+              CS ANTIQUES SHOWROOM
+            </p>
             <h1 className="mt-3 text-3xl md:text-4xl font-bold">
               Destination Price Calculator
             </h1>
@@ -115,7 +118,7 @@ const Home = () => {
                   htmlFor="distance"
                   className="block text-sm font-semibold text-slate-700 mb-2"
                 >
-                  Distance (km)
+                  Distance (km) [ ඔබගේ ස්ථානයේ සිට CS ANTIQUES SHOWROOM එකට ඇති දුර ]
                 </label>
                 <input
                   type="number"
